@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./Portfolio.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Sanjai Arivu <small>Full Stack Developer</small>
+    </div>
+    <nav>
+      <a href="">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <img src="./imgs/pic3.png" alt="">
+    </section>
+
+    <section>
+
+      <h1>Hello</h1>
+      <h4>A Bit About Me</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque animi tempore qui recusandae? Exercitationem libero, ad nemo deserunt eaque quis nobis cumque dolorem laudantium, magnam incidunt commodi alias aspernatur.</p>
+      
+      <div>
+         <div><a href="https://drive.google.com/file/d/1ZdVnsjRjfsK4vFr9dCGe1lPrh5zd0EtL/view?usp=drivesdk" style="text-decoration: none; color: white; ">Resume</a></div>
+         <div><a href="#project" style="text-decoration: none; color: white; ">Projects</a></div>
+         <div><a href="#contact" style="text-decoration: none; color: white; ">Contact</a></div>     
+      </div>
+
+    </section>
+  </main>
+
+
+  <!------------------------------------------------------------- Skills ------------------>
+
+  <section class="skills-section" id="skills">
+  <h2>Skills</h2>
+  <p>Here are some of my skills on which I have learnt.</p>
+
+ <div class="skills-container">
+
+  <!-- WebTech -->
+  <div class="skill-category">
+    <h3>FrontEnd</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+        HTML
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+        CSS
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        JavaScript
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+        Bootstrap
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React JS" />
+        React JS
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend -->
+  <div class="skill-category">
+    <h3>Backend</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+        Java
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
+        Spring
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/4562/4562989.png" alt="JDBC" />
+        JDBC
+      </div>
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="Hibernate" />
+        Hibernate
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="SQL" />
+        SQL
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <div class="skill-category">
+    <h3>Tools</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" />
+        VSCode
+      </div>
+      <div class="skill-item">
+        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" />
+        Postman
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+        Eclipse
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        MySQL
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+        Figma
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ====================================================== Projects Section Start ======================================== -->
+<section class="projects-section" id="project">
+  <div class="filter-tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="website">Website</button>
+    <button class="tab" data-filter="React-js">React-js</button>
+    <button class="tab" data-filter="Spring-boot">Spring-boot</button>
+  </div>
+
+  <div class="projects-grid">
+    <!---------------------------------------------------------------- Websites -->
+    <div class="project-card" data-category="website">
+      <img src="./Project-img/E-Com.png" alt="">
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <h3>Clothing E-Commerce</h3>
+      <p class="year">FEB 2025</p>
+      <p class="description">A responsive news blog layout created as a beginner frontend developer.</p>
+      <center><button class="viewcode"><a href="https://github.com/sanjaiarivu/Clothing-Ecommerce">View Code</a> </button></center>  
+    </div>
+
+    <div class="project-card" data-category="website">
+      <img src="./Project-img/phonepay-clone.png" alt="">
+      <div class="tags"><span>HTML</span><span>CSS</span></div>
+      <h3>PhonePay Clone</h3>
+      <p class="year">March 2025</p>
+      <p class="description">A responsive news blog layout created as a beginner frontend developer.</p>
+      <center><button class="viewcode"><a href="#">View Code</a> </button></center>
+    </div>
+
+    <div class="project-card" data-category="website">
+      <img src="./Project-img/Portfolio(free css).png" alt="">
+      <div class="tags"><span>HTML</span><span>CSS</span></div>
+      <h3>Portfolio (Free css)</h3>
+      <p class="year">FEB 2025</p>
+      <p class="description">A responsive news blog layout created as a beginner frontend developer.</p>
+      <center><button class="viewcode"><a href="#">View Code</a> </button></center>
+    </div>
+
+    
+    <!-------------------------------------------------------------- React - js -->
+    <div class="project-card" data-category="React-js">
+      <img src="https://via.placeholder.com/300x150" alt="Blogger">
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <h3>Blogger</h3>
+      <p class="year">2023</p>
+      <p class="description">Travel blog page showing off beginner frontend skills.</p>
+      <center><button class="viewcode"><a href="#">View Code</a> </button></center>
+    </div>
+
+    <!-- ------------------------------------------------------------Spring Boot-------------------- -->
+    <div class="project-card" data-category="Spring-boot">
+      <img src="https://via.placeholder.com/300x150" alt="Cook.io">
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+      <h3>Cook.io - Online Recipe App</h3>
+      <p class="year">2023</p>
+      <p class="description">Online recipe search using HTML, JS and Edamam API.</p>
+      <center><button class="viewcode"><a href="#">View Code</a> </button></center>
+    </div>
+  </div>
+</section>
+
+<!------------------------------------------------------------------- footer---------------------------------- -->
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>SANJAI ARIVU</h2>
+      <p>Java Full Stack Developer | HTML, CSS, JS, React, Java, Spring Boot, SQL</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:sanjaiarivazhagan03@gmail.com">sanjaiarivazhagan03@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919342955547">+91 93429 55547</a></p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Me</h3>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sanjai A. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+  <script src="./Portfolio.js"></script>
+</body>
+</html>
