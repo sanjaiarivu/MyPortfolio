@@ -212,6 +212,10 @@ main section div > div:hover {
   text-decoration: none;
   color: black;
 }
+.viewbuttons{
+  display: flex;
+  justify-content: space-around;
+}
 
 .filter-tabs {
   display: flex;
@@ -327,7 +331,7 @@ main section div > div:hover {
   color: #aaa;
 }
 
-/* Responsive */
+
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
