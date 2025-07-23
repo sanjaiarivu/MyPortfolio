@@ -1,8 +1,11 @@
-
-html {
-  scroll-behavior: smooth;
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset some default styles */
         * {
           margin: 0;
           padding: 0;
@@ -190,241 +193,39 @@ html {
             font-size: 1rem;
           }
         }
+    </style>
+</head>
+<body>
+    <header class="header">
+      <div class="logo">
+        Sanjai Arivu <small class="subtitle">Full Stack Developer</small>
+      </div>
+      <nav class="navbar">
+        <a class="nav-link" href="https://drive.google.com/file/d/1G4rl22k1ibFhh0ijU2fyX8T-Jhx_RNXa/view?usp=drivesdk">Resume</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#project">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
 
-/* ===== Skills Section Styles ===== */
+    <main>
 
-.skills-section {
-  background-color: #0f0f1b;
-  color: #fff;
-  padding: 60px 40px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
+      <section class="profile-section">
+        <img class="profile-img" src="./imgs/pic3.png" alt="Sanjai Arivu">
+      </section>
 
-.skills-section h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+      <section class="about-section">
+        <h1 class="about-title">Hello</h1>
+        <h4 class="about-subtitle">A Bit About Me</h4>
+        <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque animi tempore qui recusandae? Exercitationem libero, ad nemo deserunt eaque quis nobis cumque dolorem laudantium, magnam incidunt commodi alias aspernatur.</p>
+        
+        <div class="about-links">
+           <a class="about-link" href="https://drive.google.com/file/d/1G4rl22k1ibFhh0ijU2fyX8T-Jhx_RNXa/view?usp=drivesdk">Resume</a>
+           <a class="about-link" href="#project">Projects</a>
+           <a class="about-link" href="#contact">Contact</a>     
+        </div>
+      </section>
+    </main>
 
-.skills-section p {
-  color: #bbb;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.skill-category {
-  background-color: #151526;
-  border: 1px solid #3b3b50;
-  border-radius: 10px;
-  padding: 20px 30px;
-  width: 300px;
-  box-shadow: 0 0 10px #1f1f2e;
-}
-
-.skill-category h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.skill-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.skill-item {
-  background-color: #1f1f2e;
-  border-radius: 8px;
-  padding: 8px 12px;
-  display: flex;
-  align-items: center;
-  color: #eee;
-  font-size: 14px;
-  gap: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.skill-item:hover {
-  transform: scale(1.05);
-}
-
-.skill-item img {
-  width: 24px;
-  height: 24px;
-}
-
-/* ===== Projects Section Styles ===== */
-
-.projects-section {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-.viewcode {
-  display: inline-block;
-  background-color: white;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 188, 212, 0.3);
-}
-
-.viewcode:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(150, 179, 183, 0.4);
-}
-
-.viewcode>a{
-  text-decoration: none;
-  color: black;
-}
-.viewbuttons{
-  display: flex;
-  justify-content: space-around;
-}
-
-.filter-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
-
-.tab {
-  background-color: transparent;
-  border: 1px solid #6633ff;
-  color: #6633ff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.tab.active,
-.tab:hover {
-  background-color: #6633ff;
-  color: #fff;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-  color: #fff;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.tags span {
-  background-color: #222;
-  color: #c1c1c1;
-  padding: 4px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-  margin-right: 5px;
-}
-
-.project-card h3 {
-  margin-top: 10px;
-}
-
-.project-card .year {
-  color: #999;
-  font-size: 14px;
-}
-
-.project-card .description {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* ===== Footer Styles ===== */
-
-.footer {
-  background-color: #111;
-  color: #eee;
-  padding: 40px 20px 20px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.footer-about h2 {
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.footer-contact a,
-.footer-social a {
-  color: #eee;
-  text-decoration: none;
-}
-
-.footer-contact a:hover,
-.footer-social a:hover {
-  text-decoration: underline;
-}
-
-.footer-social {
-  margin-top: 10px;
-}
-
-.footer-bottom {
-  border-top: 1px solid #444;
-  margin-top: 30px;
-  padding-top: 15px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-
-@media (min-width: 768px) {
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .footer-about,
-  .footer-contact,
-  .footer-social {
-    flex: 1;
-  }
-}
-
-
+</body>
+</html>
