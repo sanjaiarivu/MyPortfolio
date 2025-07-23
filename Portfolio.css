@@ -16,13 +16,12 @@ html {
           line-height: 1.6;
         }
 
-        /* Header and Navbar */
         .header {
           background: #222;
           color: #fff;
           padding: 20px 40px;
           display: flex;
-          justify-content: space-between; /* Align logo to the left and navbar to the right */
+          justify-content: space-between; 
           align-items: center;
         }
 
