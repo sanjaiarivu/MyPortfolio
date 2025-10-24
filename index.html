@@ -32,7 +32,7 @@
       <section class="about-section">
         <h1 class="about-title">Hello</h1>
         <h4 class="about-subtitle">A Bit About Me</h4>
-        <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque animi tempore qui recusandae? Exercitationem libero, ad nemo deserunt eaque quis nobis cumque dolorem laudantium, magnam incidunt commodi alias aspernatur.</p>
+        <p class="about-description">Hi, I’m Sanjai — a passionate Java Full Stack and React Developer with hands-on experience in building modern, responsive web applications using technologies like HTML, CSS, JavaScript, React.js, Java, Spring Boot, and SQL. I’ve worked on real-world projects that integrate both frontend and backend technologies, showcasing my ability to develop complete, scalable web solutions from start to finish.</p>
         
         <div class="about-links">
            <a class="about-link" href="https://drive.google.com/file/d/1G4rl22k1ibFhh0ijU2fyX8T-Jhx_RNXa/view?usp=drivesdk">Resume</a>
@@ -219,28 +219,41 @@
   </div>
 </section>
 
-<!------------------------------------------------------------------- footer---------------------------------- -->
-
+<!-- Footer Section -->
 <footer class="footer" id="contact">
   <div class="footer-container">
-    <div class="footer-about">
-      <h2>SANJAI ARIVU</h2>
-      <p>Java Full Stack Developer | HTML, CSS, JS, React, Java, Spring Boot, SQL</p>
+    <!-- Contact Form Section -->
+    <div class="footer-left">
+      <h3>Contact With Mail</h3>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="from_email" name="from_email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </div>
 
-    <div class="footer-contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:sanjaiarivazhagan03@gmail.com">sanjaiarivazhagan03@gmail.com</a></p>
-      <p>Phone: <a href="tel:+919342955547">+91 93429 55547</a></p>
-    </div>
-
-    <div class="footer-social">
-      <h3>Follow Me</h3>
-      <a href="https://github.com/sanjaiarivu" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/sanjaiarivu03" target="_blank">LinkedIn</a>
+    <!-- Contact Info & Social Links -->
+    <div class="footer-right">
+      <h3>My Info</h3>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:sanjaiarivazhagan03@gmail.com">sanjaiarivazhagan03@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+919342955547">+91 93429 55547</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/sanjaiarivu" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/sanjaiarivu03" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
     </div>
   </div>
 
+  <!-- Copyright Section -->
   <div class="footer-bottom">
     <p>&copy; 2025 Sanjai A. All rights reserved.</p>
   </div>
@@ -249,6 +262,7 @@
 
 
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="./Portfolio.js"></script>
 </body>
 </html>
