@@ -1,7 +1,7 @@
 // Initialize EmailJS
 (function() {
   // Replace with your EmailJS public key
-  emailjs.init("C-_DtlTW2rHPe-Ocd");
+  emailjs.init("nE3Vqg9SVAkIVMcEP");
 })();
 
 // Contact form handling
@@ -23,8 +23,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   };
 
   // Send email using EmailJS
-  // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
-  emailjs.send('service_lv1f0k3', 'template_qig6d7s', templateParams)
+  emailjs.send('service_vw71lus', 'template_tflt5ow', templateParams)
     .then(() => {
       // Show success message
       showFormMessage('Message sent successfully!', 'success');
